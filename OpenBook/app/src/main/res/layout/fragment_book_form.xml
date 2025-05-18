@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/et_isbn"
+        android:hint="ISBN (13자리)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/btn_check_isbn"
+        android:text="중복 확인"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:hint="제목"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <EditText
+        android:id="@+id/et_author"
+        android:hint="저자"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <EditText
+        android:id="@+id/et_krc"
+        android:hint="KRC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/btn_donate"
+        android:text="등록"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+</LinearLayout>

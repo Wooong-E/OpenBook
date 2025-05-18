@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "725097756154",
+    "project_id": "openbook-cae62",
+    "storage_bucket": "openbook-cae62.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725097756154:android:426be45d908df6056fa043",
+        "android_client_info": {
+          "package_name": "com.example.openbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDLSzepcFjQ2MrrnwygsmF6jhlFITCpwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

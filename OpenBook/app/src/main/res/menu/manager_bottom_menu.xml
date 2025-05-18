@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_book_search"
+        android:enabled="true"
+        android:icon="@drawable/baseline_search_24"
+        android:title="도서 검색"/>
+
+    <item
+        android:id="@+id/action_book_registration"
+        android:enabled="true"
+        android:icon="@drawable/baseline_add_book_24"
+        android:title="도서 등록"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_24"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/action_book_statistics"
+        android:enabled="true"
+        android:icon="@drawable/baseline_book_statistics_24"
+        android:title="도서 통계"/>
+
+    <item
+        android:id="@+id/action_user_management"
+        android:enabled="true"
+        android:icon="@drawable/baseline_my_page_24"
+        android:title="사용자 관리"/>
+</menu>

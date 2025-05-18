@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_register_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="공지사항 등록하기" />
+
+    <Button
+        android:id="@+id/btn_overdue_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="연체자 목록 보기" />
+
+    <!-- 연체자 목록 영역을 고정된 높이로 설정 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tv_overdue_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_logout_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="로그아웃"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+</LinearLayout>

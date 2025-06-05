@@ -1,7 +1,5 @@
 package com.example.openbook.user;
 
-
-
 import com.example.openbook.BookAdapter;
 import com.example.openbook.BookSearchFragment;
 import com.example.openbook.R;

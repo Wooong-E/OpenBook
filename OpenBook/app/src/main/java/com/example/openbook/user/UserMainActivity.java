@@ -56,8 +56,6 @@ public class UserMainActivity extends BaseActivity {
         setFrag(1);
     }
 
-
-    // fragment 교체가 일어나는 실행문.
     private void setFrag(int n){
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();

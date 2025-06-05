@@ -1,9 +1,10 @@
 package com.example.openbook.user;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -51,10 +52,6 @@ public class UserTopReadersActivity extends BaseActivity {
                 while ((line = reader.readLine()) != null) result.append(line);
                 reader.close();
 
-
-                /// //////// 디버깅..
-                Log.d("TOP_READERS", "응답 결과: " + result);  // ✅ 여기에 추가
-
                 JSONObject json = new JSONObject(result.toString());
                 if (json.getBoolean("success")) {
                     JSONArray topUsers = json.getJSONArray("topUsers");
@@ -80,7 +77,6 @@ public class UserTopReadersActivity extends BaseActivity {
                         }
                         table.addView(header);
 
-                        // ✅ 사용자 리스트
                         for (int i = 0; i < userList.size(); i++) {
                             JSONObject user = userList.get(i);
 

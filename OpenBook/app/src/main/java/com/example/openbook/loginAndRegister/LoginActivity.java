@@ -33,7 +33,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);  // 반드시 먼저 호출
+        super.onCreate(savedInstanceState);
 
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
@@ -44,7 +44,6 @@ public class LoginActivity extends BaseActivity {
             return insets;
         });
 
-        // 자동 로그인 체크는 onCreate 이후 안전하게 처리
         checkAutoLogin();
 
         et_Id = findViewById(R.id.et_id);
@@ -72,15 +71,14 @@ public class LoginActivity extends BaseActivity {
                 return;
             }
 
-            // 서버 응답 처리
+
             Response.Listener<String> responseListener = response -> {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     boolean success = jsonObject.getBoolean("success");
 
                     if (success) {
-                        TokenUploader.uploadFCMToken(LoginActivity.this);  // 로그인 성공 직후에 토큰 서버 전송
-
+                        TokenUploader.uploadFCMToken(LoginActivity.this);
                         String userName = jsonObject.getString("userName");
                         String userType = jsonObject.getString("userType");
 
@@ -129,7 +127,7 @@ public class LoginActivity extends BaseActivity {
         boolean isLoggedIn = sharedPref.getBoolean("isLoggedIn", false);
 
         if (isLoggedIn) {
-            TokenUploader.uploadFCMToken(this); //  토큰 업로드
+            TokenUploader.uploadFCMToken(this);
             new Handler(Looper.getMainLooper()).post(() -> {
                 String userType = sharedPref.getString("userType", "");
                 Intent intent;

@@ -122,9 +122,9 @@ public class UserCurrentLoanActivity extends BaseActivity {
                 runOnUiThread(() -> {
                     Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
                     if (success) {
-                        askReviewAfterReturn(isbn);  // 리뷰 작성 유도
-                        loadLoans(); // 목록 갱신
-                    }
+                        askReviewAfterReturn(isbn);
+                        loadLoans();
+                }
                 });
 
             } catch (Exception e) {
@@ -134,7 +134,7 @@ public class UserCurrentLoanActivity extends BaseActivity {
         }).start();
     }
 
-    class LoanAdapter extends BaseAdapter {
+    private class LoanAdapter extends BaseAdapter {
         @Override
         public int getCount() {
             return loanList.size();
@@ -188,7 +188,6 @@ public class UserCurrentLoanActivity extends BaseActivity {
     }
     static class LoanBook {
         protected String title, author, isbn, loanDate, returnDate;
-
         protected LoanBook(String t, String a, String i, String d, String r) {
             title = t;
             author = a;

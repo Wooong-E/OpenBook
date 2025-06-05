@@ -43,7 +43,6 @@ public class BookAdapter extends ArrayAdapter<Book> {
             Intent intent = new Intent(context, BookDetailActivity.class);
             intent.putExtra("isbn", book.getIsbn());
 
-            // 관리자 여부 구분: context에서 추론 불가하므로 static 전달
             boolean isManager = context.getClass().getName().contains("manager");
             intent.putExtra("isManager", isManager);
 

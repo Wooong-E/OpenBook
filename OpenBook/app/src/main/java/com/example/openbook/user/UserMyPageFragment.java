@@ -87,7 +87,7 @@ public class UserMyPageFragment extends Fragment {
                                 os.flush();
                                 os.close();
 
-                                conn.getResponseCode();  // 응답은 무시해도 됨
+                                conn.getResponseCode();
                                 Log.d("FCM", "알림 끔 → 서버에 토큰 삭제 요청 완료");
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -101,7 +101,6 @@ public class UserMyPageFragment extends Fragment {
             }
         });
 
-        // 로그아웃 버튼 처리
         btn_Logout = view.findViewById(R.id.btn_logout);
         btn_Logout.setOnClickListener(new View.OnClickListener() {
             @Override

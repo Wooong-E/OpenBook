@@ -37,6 +37,7 @@ public class ManagerUserManagementFragment extends Fragment {
         userTable.setStretchAllColumns(true);
         ((ViewGroup) view.findViewById(R.id.user_container)).addView(userTable);
 
+
         fetchUserData();
         return view;
     }

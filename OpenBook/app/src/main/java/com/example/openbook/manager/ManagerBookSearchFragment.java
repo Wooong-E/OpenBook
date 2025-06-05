@@ -6,9 +6,10 @@ import com.example.openbook.R;
 
 public class ManagerBookSearchFragment extends BookSearchFragment {
     private BookAdapter adapter;
+
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_book_search; // 사용자 XML과 동일 사용
+        return R.layout.fragment_book_search;
     }
     @Override
     protected BookAdapter getAdapter() {
@@ -16,4 +17,3 @@ public class ManagerBookSearchFragment extends BookSearchFragment {
         return adapter;
     }
 }
-

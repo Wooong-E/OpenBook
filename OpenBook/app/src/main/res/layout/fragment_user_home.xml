@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:text="공지사항을 불러오는 중..."
-        android:layout_margin="30sp"
+        android:layout_margin="30dp"
         android:textSize="15sp"
         android:background="#eeeeee"/>
 
@@ -19,7 +19,7 @@
         android:id="@+id/btn_top_readers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30sp"
+        android:layout_margin="30dp"
         android:text="다독왕 순위 보기"
         android:layout_marginTop="16dp"/>
 
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="대출 중인 도서 보기"
-        android:layout_margin="30sp"/>
+        android:layout_margin="30dp"/>
 
 
 

@@ -16,7 +16,6 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class UserBookDonateFragment extends BookFormFragment {
-
     @Override
     protected void onDuplicateISBN(String isbn) {
         donateExistingBook(isbn);

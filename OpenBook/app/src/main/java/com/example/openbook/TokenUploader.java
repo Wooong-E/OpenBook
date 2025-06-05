@@ -35,7 +35,7 @@ public class TokenUploader {
     private static void sendTokenToServer(String userID, String token) {
         new Thread(() -> {
             try {
-                URL url = new URL( "http://whdnd5725.dothome.co.kr/SaveToken.php"); // 서버 주소
+                URL url = new URL( "http://whdnd5725.dothome.co.kr/SaveToken.php");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setDoOutput(true);

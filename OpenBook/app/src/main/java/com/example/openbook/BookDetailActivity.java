@@ -55,7 +55,7 @@ public class BookDetailActivity extends BaseActivity {
 
         loadBookDetail();
 
-        loadAverageRating(isbn); // 평균 평점 출력
+        loadAverageRating(isbn);
 
         boolean isManager = getIntent().getBooleanExtra("isManager", false);
         if (isManager) {
@@ -152,7 +152,7 @@ public class BookDetailActivity extends BaseActivity {
                 runOnUiThread(() -> {
                     Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
                     if (success) {
-                        finish(); // 도서 검색 화면으로 복귀
+                        finish();
                     }
                 });
 

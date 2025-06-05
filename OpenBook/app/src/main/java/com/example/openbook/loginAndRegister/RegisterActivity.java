@@ -2,7 +2,6 @@ package com.example.openbook.loginAndRegister;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,7 +44,6 @@ public class RegisterActivity extends BaseActivity {
         btn_Register = findViewById(R.id.btn_register);
 
 
-        // 회원가입 버튼 클릭 시 수행
         btn_Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,31 +51,24 @@ public class RegisterActivity extends BaseActivity {
                 String userPasswd = et_Password.getText().toString().trim();
                 String userName = et_Name.getText().toString().trim();
 
-                // ✅ 1. 빈칸 여부 검사
+
                 if (userID.isEmpty() || userPasswd.isEmpty() || userName.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "회원가입 실패: 모든 항목을 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-                // ✅ 2. 학번: 숫자만, 8자 이상 10자 이하
                 if (!userID.matches("^\\d{8,10}$")) {
                     Toast.makeText(getApplicationContext(), "회원가입 실패: 학번은 8자 이상 10자 이하 숫자여야 합니다.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-                // ✅ 3. 비밀번호: 영문+숫자 포함, 8자 이상 16자 이하
                 if (!userPasswd.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,16}$")) {
                     Toast.makeText(getApplicationContext(), "회원가입 실패: 비밀번호는 영문+숫자 포함 8자 이상 16자 이하로 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-                // ✅ 4. 이름: 1~10자
                 if (userName.length() > 10) {
                     Toast.makeText(getApplicationContext(), "회원가입 실패: 이름은 10자 이하로 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                // ✅ 서버 통신
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

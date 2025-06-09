@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_title"
+            android:text="제목"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_author"
+            android:text="저자"/>
+
+        <RadioButton
+            android:id="@+id/radio_isbn"
+            android:text="ISBN"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:hint="검색어 입력 후 Enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"/>
+
+    <ListView
+        android:id="@+id/list_books"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -5,12 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- 공통 상단 바 -->
     <include
         android:id="@+id/topBar"
         layout="@layout/common_top_bar" />
 
-    <!-- 학번 입력 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +31,6 @@
             android:inputType="number" />
     </LinearLayout>
 
-    <!-- 비밀번호 입력 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +53,6 @@
             android:inputType="textPassword" />
     </LinearLayout>
 
-    <!-- 이름 입력 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,7 +75,6 @@
             android:inputType="text" />
     </LinearLayout>
 
-    <!-- 회원가입 버튼 -->
     <Button
         android:id="@+id/btn_register"
         android:layout_width="match_parent"

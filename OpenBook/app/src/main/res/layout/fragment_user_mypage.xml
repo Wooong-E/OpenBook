@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <Button
         android:id="@+id/btn_account_info"
         android:layout_width="match_parent"
@@ -14,7 +13,6 @@
         android:text="계정 정보 보기"
         android:layout_margin="30sp"
         android:layout_marginBottom="12dp" />
-
 
     <Switch
         android:id="@+id/switch_fcm"
@@ -25,7 +23,6 @@
         android:checked="true"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="match_parent"
@@ -34,6 +31,4 @@
         android:layout_margin="30sp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp" />
-
-
 </LinearLayout>

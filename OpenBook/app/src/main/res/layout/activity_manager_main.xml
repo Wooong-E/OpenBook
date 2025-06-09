@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- 공통 상단 바에 ID 추가 -->
     <include
         android:id="@+id/topBar"
         layout="@layout/common_top_bar" />
 
-    <!-- 메인 콘텐츠 영역 -->
     <FrameLayout
         android:id="@+id/main_frame"
         android:layout_width="0dp"
@@ -20,7 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- 하단 네비게이션 -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/managerBottomNavi"
         android:layout_width="0dp"
